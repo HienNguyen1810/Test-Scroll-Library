@@ -1,7 +1,7 @@
-#root {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: hidden;
+overflow-x: hidden; /* Loại bỏ thanh scroll ngang */
+overflow-y: hidden; /* Loại bỏ thanh scroll dọc */
+height: 100vh; /* Đảm bảo #root chiếm toàn bộ chiều cao màn hình */
+width: 100vw; /* Đảm bảo #root chiếm toàn bộ chiều rộng màn hình */
 }
 
 
