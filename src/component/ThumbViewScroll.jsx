@@ -15,7 +15,7 @@ function ThumbViewScroll({pickerValue, handleSetValue}) {
              {({ selected }) => (
             /* Use the `selected` state ti conditionally style the selected item */
             <div style={{ color: selected ? 'red' : 'black' }}>
-              <p style={{fontSize:'24px'}}>{option.title}</p>
+              <p style={{fontSize:'30px'}}>{option.title}</p>
             </div>
           )}
             

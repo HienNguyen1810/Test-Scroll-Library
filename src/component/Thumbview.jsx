@@ -13,8 +13,8 @@ const Thumbview = ({pickerValue}) => {
         return <img style={{width:'100%',height:'100%',objectFit:'cover'}} src={src} alt="" />
     }
     return (
-        <div style={{height:'80vh',width:'100%', display:'flex',alignItems:'center',justifyContent:'center'}}>
-            <div style={{width:'70%'}}>
+        <div style={{height:'70vh',width:'100%', display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <div style={{width:'100%'}}>
             {renderImageTag()}
             </div>
      

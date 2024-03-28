@@ -13,3 +13,37 @@
     height: 100%;
     overflow: hidden; /* Ẩn thanh scroll không cần thiết của picker nếu có */
   }
+  /* Áp dụng cho tất cả các mục trong picker */
+.picker-scroll .picker-column .picker-item {
+  transition: transform 0.3s ease, color 0.3s ease; /* Làm mượt hiệu ứng chuyển đổi màu sắc và vị trí */
+}
+
+/* Khi một mục được chọn */
+.picker-scroll .picker-column .picker-item[aria-selected="true"] {
+  color: red; /* Màu sắc cho mục được chọn */
+  transform: scale(1.1); /* Làm nổi bật mục được chọn */
+}
+
+/* Hiệu ứng khi scroll */
+.scroll-list-wrapper {
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Hiệu ứng thanh cuộn mỏng cho Firefox */
+  scrollbar-color: #888 #f0f0f0; /* Màu thanh cuộn cho Firefox */
+}
+
+/* Hiệu ứng thanh cuộn cho Chrome, Edge, và Safari */
+.scroll-list-wrapper::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Màu nền của track */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thumb */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu khi hover */
+}
