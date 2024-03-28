@@ -1,0 +1,15 @@
+.picker-scroll{
+    mask-image: linear-gradient(to top, transparent, transparent 5%, white 40%, white 40%, transparent 95%, transparent) !important;
+ 
+}
+.scroll-list-wrapper {
+    /* Thiết lập chiều cao cố định cho container để kích hoạt scroll */
+    height: 300px; /* Hoặc chiều cao bạn mong muốn */
+    overflow-y: auto; /* Cho phép scroll theo chiều dọc */
+  }
+  
+  /* Đảm bảo picker-scroll phù hợp với container của nó */
+  .picker-scroll {
+    height: 100%;
+    overflow: hidden; /* Ẩn thanh scroll không cần thiết của picker nếu có */
+  }
