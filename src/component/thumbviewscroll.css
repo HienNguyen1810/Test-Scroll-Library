@@ -47,3 +47,36 @@
 .scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
   background: #555; /* Màu khi hover */
 }
+/* thumbviewscroll.css */
+.scroll-list-wrapper {
+  -webkit-overflow-scrolling: touch; /* Tối ưu hóa cuộn trên iOS */
+  overflow-y: scroll; /* Cho phép cuộn dọc */
+  scrollbar-width: thin; /* Thanh cuộn mỏng cho các trình duyệt hỗ trợ */
+  scrollbar-color: #888 #f0f0f0; /* Màu sắc cho thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar {
+  width: 8px; /* Điều chỉnh độ rộng của thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Màu nền của track */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thumb */
+  border-radius: 4px;
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu của thumb khi hover */
+}
+
+.picker-scroll .picker-column .picker-item {
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition cho việc thay đổi */
+}
+
+.picker-scroll .picker-column .picker-item[aria-selected="true"] {
+  color: red; /* Nổi bật mục được chọn */
+  transform: scale(1.05); /* Phóng to nhẹ mục được chọn */
+}
